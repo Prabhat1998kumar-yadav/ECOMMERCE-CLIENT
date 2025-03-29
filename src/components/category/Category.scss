@@ -1,0 +1,35 @@
+.Category{
+    width: 32%;
+    aspect-ratio: 16/9;
+    background-image: url("../../assests/spiderman.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;   
+    cursor: pointer;
+
+    .category-content{
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        transition: 0.2s ease;
+
+        .heading{
+            color: white;
+        }
+
+        &:hover{
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Category{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 480px){
+    .Category{
+        width: 100%;
+    }
+}
